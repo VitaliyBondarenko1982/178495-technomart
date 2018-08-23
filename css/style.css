@@ -1,0 +1,423 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Cuprum", PT Sans, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  -webkit-clip-path: inset(100%);
+
+    clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.top-header,
+.bottom-header {
+  color: #ffffff;
+  background-color: #293449;
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.logo a {
+  color: #ffffff;
+  background-color: #ee3643;
+}
+
+.logo {
+  font-size: 24px;
+  line-height: 24px;
+}
+.middle-header {
+  background-color: #f3f7f8;
+}
+/*.main-navigation,
+.goods-list,
+.features-list,
+.features-slider-list,
+.popular-goods-list,
+.popular-produsers-list,
+.services-slider-list,
+.about-us-list,
+.footer-main-navigation,
+.footer-catalog-navigation,
+.footer-social,
+.breadcrumbs,
+.sort-list,
+.catalog,
+.pagination-list {
+  list-style: none;
+}*/
+
+ul {
+  list-style: none;
+}
+.to-order {
+  color: #ffffff;
+  background-color: #63a63e;
+  border: none;
+}
+
+.main-title {
+  color: #ee3643;
+  font-size: 16px;
+  line-height: 23px;
+  font-style: italic;
+}
+
+.middle-header .phone {
+  color: #ee3643;
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.middle-header .address {
+  color: #32425c;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.user-log a {
+  color: #000000;
+  font-size: 14px;
+  line-height: 24px;
+  background-color: #ffffff;
+}
+
+.main-navigation a {
+  color: #ffffff;
+}
+
+.features {
+  color: #ffffff;
+}
+
+.features-title {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.features a {
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.goods-title {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.old-price {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+  text-decoration: line-through;
+  color: #a9a9a9;
+}
+
+.new-price-button {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+}
+
+.goods-item-materials {
+  background-color: #ffbf47;
+}
+
+.goods-item-tool {
+  background-color: #3bbce3;
+}
+
+.goods-item-technics {
+  background-color: #dc91d8;
+}
+
+.features-item-discount {
+  background-color: #8ed78f;
+}
+
+.features-item-delivery {
+  background-color: #ffc047;
+}
+
+.features-slider-title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.features-slider-item {
+  background-color: #84645a;
+}
+
+.button {
+  font-size: 14px;
+  line-height: 18px;
+  background-color: #ee3643;
+  color: #ffffff;
+  border: none;
+}
+
+.features-slider-item a {
+  font-size: 14px;
+  line-height: 18px;
+  background-color: #ee3643;
+}
+
+.popular-goods-header,
+.popular-produsers-header {
+  background-color: #f9f5f0;
+}
+
+.popular-goods-header,
+.popular-produsers-header {
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+}
+
+.popular-goods-header a,
+.popular-produsers-header a,
+.about-us-description a {
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #ee3643;
+}
+
+.services {
+  background-color: #f4f8f9;
+}
+
+.services-title {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.services-description {
+  font-size: 13px;
+}
+
+.services-slider-controls-item {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.services-slider-title {
+  font-size: 36px;
+  line-height: 36px;
+  color: #32425c;
+}
+
+.services-slider-description {
+  font-size: 13px;
+  line-height: 24px;
+  color: #32425c;
+}
+
+.services-button {
+  /*color: #ffffff;*/
+}
+
+.about-us-title {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.about-us-description p {
+  font-size: 13px;
+}
+
+.about-us-list {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.about-us-contacts p {
+  font-size: 14px;
+}
+
+.top-footer {
+  background-color: #32425c;
+}
+
+.bottom-footer {
+  background-color: #293449;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.footer-contacts {
+  color: #ffffff;
+}
+
+.footer-main-navigation a {
+  color: #ffffff;
+}
+
+.footer-catalog-navigation a,
+.feedback a,
+.developed a {
+  color: #ffd180;
+}
+
+.write-form {
+  font-size: 18px;
+  line-height: 18px;
+}
+
+
+.basket-catalog {
+  background-color: #ee3643;
+}
+
+.user-name {
+  background-color: #ffffff;
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.user-log-inner-page a {
+  background-color: inherit;
+  color: #32425c;
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration: underline;
+}
+
+.catalog-title {
+  color: #32425c;
+  font-size: 30px;
+  line-height: 30px;
+  background-color: #f2f6f8;
+}
+
+.breadcrumbs {
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.breadcrumbs a {
+  color: #000000;
+}
+
+.filter-title {
+  background-color: #f7f3ec;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.filter fieldset {
+  border: none;
+}
+
+.filter legend {
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 700;
+}
+.min-price,
+.max-price {
+  background-color: #f7f3ec;
+  border: none;
+  text-align: center;
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.filter ul {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.filter-button {
+  font-size: 13px;
+  line-height: 18px;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.sort {
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.to-buy-button {
+  background-color: #63a63e;
+  border-bottom: 3px solid #367315;
+  border-radius: 2px;
+}
+
+.to-bookmarks-button {
+  background-color: #ffffff;
+  border: 3px solid #63a63e;
+  border-radius: 2px;
+  color: #000000;
+}
+
+.pagination-list a {
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.pagination-item-current a {
+  color: #ffffff;
+  background-color: #ee3643;
+}
+
+.about-goods {
+  background-color: #f2f6f8;
+}
+
+.about-goods-title {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.about-goods-description {
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.modal-catalog-bottom {
+  background-color: #f1f1f1;
+}
+.modal-catalog-title {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.continue-button {
+  color: #000000;
+  background-color: #ffffff;
+}

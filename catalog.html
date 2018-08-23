@@ -3,6 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
@@ -12,8 +16,8 @@
         </p>
         <p class="search">Поиск:</p>
         <p class="bookmarks">Закладки:<span>0</span></p>
-        <p class="basket">Корзина:<span>0</span></p>
-        <button>Оформить заказ</button>
+        <p class="basket basket-catalog">Корзина:<span>10</span></p>
+        <button class="to-order">Оформить заказ</button>
       </section>
 
       <section class="middle-header">
@@ -22,9 +26,10 @@
           <p class="phone">+7 (812) 555-05-55</p>
           <p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
-        <div class="user-log">
-          <a href="#">Войти</a>
-          <a href="#">Регистрация</a>
+        <div class="user-log user-log-inner-page">
+          <p class="user-name">Равшан Джамшутович</p>
+          <a>Мои заказы</a>
+          <a>Личный кабинет</a>
         </div>
       </section>
 
@@ -42,8 +47,20 @@
     </header>
 
     <main>
+      <ul class="breadcrumbs">
+        <li>
+          <a href="catalog.html">Каталог</a>
+        </li>
+        <li>
+          <a href="tools.html">Магазин</a>
+        </li>
+        <li class="breadcrumbs-current">Средства для ухода</li>
+      </ul>
+      <h2 class="catalog-title">Перфораторы</h2>
+
       <section class="filters">
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+          <h3 class="filter-title">Фильтр:</h3>
           <fieldset class="range-filter">
             <legend>Цена:</legend>
             <div class="range-controls">
@@ -116,53 +133,53 @@
             <img src="img/bfg-3000.jpg" width="214" height="135" alt="Перфоратор BOSCH BFG 3000">
             <h3 class="goods-title">Перфоратор BOSCH BFG 3000</h3>
             <p class="old-price">22500 Р.</p>
-            <button class="new-price">15500 Р.</button>
+            <button class="button new-price-button">15500 Р.</button>
           </li>
           <li class="catalog-item">
             <img src="img/bfg-6000.jpg" width="214" height="135" alt="Перфоратор BOSCH BFG 6000">
             <h3 class="goods-title">Перфоратор BOSCH BFG 6000</h3>
             <p class="old-price">30500 Р.</p>
-            <button class="new-price">25500 Р.</button>
+            <button class="button new-price-button">25500 Р.</button>
           </li>
           <li class="catalog-item-hover">
-            <button class="to-buy">Купить</button>
-            <button class="to-bookmarks">В закладки</button>
+            <button class="button to-buy-button">Купить</button>
+            <button class="button to-bookmarks-button">В закладки</button>
             <h3 class="goods-title">Перфоратор BOSCH BFG 2000</h3>
-            <p class="new-price">12500 Р.</p>
+            <button class="button new-price-button">12500 Р.</button>
           </li>
           <li class="catalog-item">
             <img src="img/bfg-3000.jpg" width="214" height="135" alt="Перфоратор BOSCH BFG 3000">
             <h3 class="goods-title">Перфоратор BOSCH BFG 3000</h3>
             <p class="old-price">22500 Р.</p>
-            <button class="new-price">15500 Р.</button>
+            <button class="button new-price-button">15500 Р.</button>
           </li>
           <li class="catalog-item">
             <img src="img/bfg-6000.jpg" width="214" height="135" alt="Перфоратор BOSCH BFG 6000">
             <h3 class="goods-title">Перфоратор BOSCH BFG 6000</h3>
             <p class="old-price">30500 Р.</p>
-            <button class="new-price">25500 Р.</button>
+            <button class="button new-price-button">25500 Р.</button>
           </li>
           <li class="catalog-item">
             <img src="img/bfg-2000.jpg" width="214" height="135" alt="Перфоратор BOSCH BFG 2000">
             <h3 class="goods-title">Перфоратор BOSCH BFG 2000</h3>
-            <button class="new-price">12500 Р.</button>
+            <button class="button new-price-button">12500 Р.</button>
           </li>
           <li class="catalog-item">
             <img src="img/bfg-3000.jpg" width="214" height="135" alt="Перфоратор BOSCH BFG 3000">
             <h3 class="goods-title">Перфоратор BOSCH BFG 3000</h3>
             <p class="old-price">22500 Р.</p>
-            <button class="new-price">15500 Р.</button>
+            <button class="button new-price-button">15500 Р.</button>
           </li>
           <li class="catalog-item">
             <img src="img/bfg-6000.jpg" width="214" height="135" alt="Перфоратор BOSCH BFG 6000">
             <h3 class="goods-title">Перфоратор BOSCH BFG 6000</h3>
             <p class="old-price">30500 Р.</p>
-            <button class="new-price">25500 Р.</button>
+            <button class="button new-price-button">25500 Р.</button>
           </li>
           <li class="catalog-item">
             <img src="img/bfg-2000.jpg" width="214" height="135" alt="Перфоратор BOSCH BFG 2000">
             <h3 class="goods-title">Перфоратор BOSCH BFG 2000</h3>
-            <button class="new-price">12500 Р.</button>
+            <button class="button new-price-button">12500 Р.</button>
           </li>
         </ul>
         <ul class="pagination-list">
@@ -182,13 +199,11 @@
     <footer class="main-footer">
       <section class="top-footer">
         <div class="logo">
-          <div class="logo">
-            <a href="index.html">Техномарт</a>
-          </div>
-          <div class="footer-contacts">
-            <p class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-            <p class="footer-phone">+7 (812) 555-05-55</p>
-          </div>
+          <a href="index.html">Техномарт</a>
+        </div>
+        <div class="footer-contacts">
+          <p class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <p class="footer-phone">+7 (812) 555-05-55</p>
         </div>
 
         <div class="footer-navigation">
@@ -255,12 +270,12 @@
     </footer>
 
     <section class="modal-catalog">
-      <div>
-        <p>Товар добавлен в корзину</p>
+      <div class="modal-catalog-top">
+        <p class="modal-catalog-title">Товар добавлен в корзину</p>
       </div>
-      <div>
-        <button class="draw-up">Оформить заказ</button>
-        <button class="continue">Продолжить покупки</button>
+      <div class="modal-catalog-bottom">
+        <button class="button draw-up-button">Оформить заказ</button>
+        <button class="button continue-button">Продолжить покупки</button>
       </div>
     </section>
   </body>
