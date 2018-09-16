@@ -31,7 +31,7 @@
           <p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
         <div class="user-log">
-          <a class="login-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17"><g fill="#c5c5c5"><path fill="#c5c5c5" d="M21 8.5L12.125 0v6h-6v5h6v6z"/><path fill="#c5c5c5" d="M3.106 13.952V3.048c.018-.376.171-1.057 1.01-1.057h5.027V0H4.116C1.938 0 1.112 1.81 1.087 3.027v10.946C1.112 15.189 1.938 17 4.116 17h5.027v-1.99H4.116c-.839 0-.992-.683-1.01-1.058z"/></g></svg>Войти</a>
+          <a class="login-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path fill="#c5c5c5" d="M14.875 8.5L6 0v6H0v5h6v6z"/><path fill="#c5c5c5" d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z"/></svg>Войти</a>
           <a class="registration-link" href="#">Регистрация</a>
         </div>
         <div class="bottom-header">
@@ -55,6 +55,7 @@
           <h2 class="visually-hidden">Товары и услуги</h2>
           <ul class="goods-list">
             <li class="goods-item goods-item-materials">
+              <div class="flag flag-new">новинка</div>
               <h3 class="features-title">Материалы</h3>
               <a class="features-button features-button-materials" href="#">На любой вкус</a>
             </li>
@@ -110,7 +111,7 @@
         </div>
         <ul class="popular-goods-list">
           <li class="catalog-item catalog-item-index">
-              <div class="flag flag-new">новинка</div>
+              <div class="flag">новинка</div>
               <div class="actions">
                 <a href="#" class="buy">Купить</a>
                 <a href="#" class="bookmark">В закладки</a>
@@ -123,7 +124,7 @@
               <div class="new-price">25 500 Р.</div>
           </li>
            <li class="catalog-item catalog-item-index">
-              <div class="flag flag-new">новинка</div>
+              <div class="flag">новинка</div>
               <div class="actions">
                 <a href="#" class="buy">Купить</a>
                 <a href="#" class="bookmark">В закладки</a>
@@ -136,7 +137,7 @@
               <div class="new-price">15 500 Р.</div>
           </li>
            <li class="catalog-item catalog-item-index">
-              <div class="flag flag-new">новинка</div>
+              <div class="flag">новинка</div>
               <div class="actions">
                 <a href="#" class="buy">Купить</a>
                 <a href="#" class="bookmark">В закладки</a>
@@ -263,8 +264,9 @@
         </div>
         <div class="about-us-contacts">
           <h2 class="about-us-title">Контакты</h2>
-          <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-          <img src="img/map.png" width="300" height="158" alt="Карта">
+          <p class="map-title">Вы можете забрать товар сами, заехав в наш офис:</p>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787258688!2d30.32085335131078!3d59.9387164817872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRltGPLCAxOTExODY!5e0!3m2!1suk!2sua!4v1537084008995" width="300" height="158" allowfullscreen></iframe>
+          <p class="map-wrapper"><img src="img/map.png" width="300" height="158" alt="Карта"></p>
           <button class="button write-us-button">Заблудились? Напишите нам!</button>
         </div>
       </section>
@@ -369,6 +371,9 @@
       </form>
       <button class="modal-form-close" type="button">Закрыть</button>
     </section>
+
+    <script src="js/modalForm.js" type="text/javascript"></script>
+    <script src="js/modalCatalog.js" type="text/javascript"></script>
   </body>
 </html>
 
